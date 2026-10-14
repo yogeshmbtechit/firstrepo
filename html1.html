@@ -1,8 +1,160 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>First page</title>
-    </head>
-    <h1>Collage</h1>
-    <p1>sona collage of technology</p1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: white;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      background: #141b30;
+    }
+
+    nav a {
+      color: #c7d2fe;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    .hero {
+      min-height: 65vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 70px 10%;
+    }
+
+    .tag {
+      color: #a5b4fc;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      line-height: 1.1;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #a5b4fc;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 550px;
+      color: #cbd5e1;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background: #818cf8;
+      color: #0b1020;
+      border: none;
+      padding: 13px 22px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 55px 10%;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #171f36;
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid #29324b;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <strong>YOGESH.</strong>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero" id="home">
+      <div class="tag">FIRST-YEAR IT STUDENT</div>
+      <h1>Hello, I'm Yogesh.</h1>
+      <h2>Aspiring Software Developer</h2>
+      <p>
+        I'm learning programming and building projects
+        to turn my ideas into reality.
+      </p>
+      <a class="btn" href="#projects">Explore My Work</a>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm an IT student interested in programming,
+        technology, and solving problems through code.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Calculator</h3>
+          <p>A simple calculator built with programming.</p>
+        </article>
+        <article class="card">
+          <h3>Number Game</h3>
+          <p>A number guessing game with interactive logic.</p>
+        </article>
+        <article class="card">
+          <h3>My Portfolio</h3>
+          <p>A personal website to showcase my learning.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Yogesh | Built with HTML and CSS
+  </footer>
+</body>
 </html>
